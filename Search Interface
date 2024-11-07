@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Interface</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Centering the search container */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #C6E7FF;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Search container styling */
+        .search-container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dropdown styling */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #CB9DF0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Search input styling */
+        .search-input {
+            display: flex;
+            width: 100%;
+        }
+
+        .search-input input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
+
+        /* Search button styling */
+        .search-input button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 0 5px 5px 0;
+            transition: background-color 0.3s;
+        }
+
+        .search-input button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="search-container">
+    <!-- Dropdown menu for categories -->
+    <div class="dropdown">
+        <select>
+            <option value="everything">Everything</option>
+            <option value="software-development">Software Development</option>
+            <option value="web-development">Web Development</option>
+            <option value="data-analyst">Data Analyst</option>
+            <option value="it-consultant">IT Consultant</option>
+            <option value="network-admin">Network Administrator</option>
+        </select>
+    </div>
+
+    <!-- Search input field and button -->
+    <div class="search-input">
+        <input type="text" placeholder="Enter your query...">
+        <button type="submit">Search</button>
+    </div>
+</div>
+
+</body>
+</html>
